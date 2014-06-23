@@ -140,7 +140,7 @@ static void * const keypath = (void*)&keypath;
     [overlayView addSubview:popupView];
     [sourceView addSubview:overlayView];
     
-    [dismissButton addTarget:self action:@selector(dismissPopupViewControllerWithanimation:) forControlEvents:UIControlEventTouchUpInside];
+//    [dismissButton addTarget:self action:@selector(dismissPopupViewControllerWithanimation:) forControlEvents:UIControlEventTouchUpInside];
     switch (animationType) {
         case MJPopupViewAnimationSlideBottomTop:
         case MJPopupViewAnimationSlideBottomBottom:
@@ -150,11 +150,11 @@ static void * const keypath = (void*)&keypath;
         case MJPopupViewAnimationSlideLeftRight:
         case MJPopupViewAnimationSlideRightLeft:
         case MJPopupViewAnimationSlideRightRight:
-            dismissButton.tag = animationType;
+//            dismissButton.tag = animationType;
             [self slideViewIn:popupView sourceView:sourceView overlayView:overlayView withAnimationType:animationType];
             break;
         default:
-            dismissButton.tag = MJPopupViewAnimationFade;
+//            dismissButton.tag = MJPopupViewAnimationFade;
             [self fadeViewIn:popupView sourceView:sourceView overlayView:overlayView];
             break;
     }
