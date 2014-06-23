@@ -130,11 +130,11 @@ static void * const keypath = (void*)&keypath;
     [overlayView addSubview:self.mj_popupBackgroundView];
     
     // Make the Background Clickable
-    UIButton * dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    dismissButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    dismissButton.backgroundColor = [UIColor clearColor];
-    dismissButton.frame = sourceView.bounds;
-    [overlayView addSubview:dismissButton];
+//    UIButton * dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    dismissButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    dismissButton.backgroundColor = [UIColor clearColor];
+//    dismissButton.frame = sourceView.bounds;
+//    [overlayView addSubview:dismissButton];
     
     popupView.alpha = 0.0f;
     [overlayView addSubview:popupView];
